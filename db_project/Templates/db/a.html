@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>gopi web</title>
+	
+	</head>
+		<body>
+		{% if dataall %}
+			<table>
+				<tr>
+					<td>
+		{% for dataall in dataall%}	</td>
+			<td>{{dataall.empno}}</td>
+			<td>{{dataall.empname}}</td>
+			<td>{{dataall.empsalary}}</td>
+			<td>{{dataall.empaddress}}</td>
+		{% endfor %}
+		{% endif%}
+			</table>
+		
+			
+			
+		</body>
+</html>
