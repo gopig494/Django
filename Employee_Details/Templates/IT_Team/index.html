@@ -1,0 +1,17 @@
+  <html>	
+			<table>
+				<thead>
+					<th>Employee No</th>
+					<th>Employee Name</th>
+					<th>Employee Address</th>
+				</thead>
+				<tr>
+          {% for st in db %}
+					<td>{{st.EmployeeNo}}</td>
+					<td>{{st.EmployeeName}}</td>
+					<td>{{st.EmployeeAddress}}</td>
+				</tr>{% endfor %}
+			</table>
+    <a href='#'><button type='button'>Add new student</button></a>
+				
+</html>
