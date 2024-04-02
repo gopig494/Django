@@ -6,7 +6,7 @@ from django.http import HttpResponse
 def debugger_view(request):
     a = request.GET.get("info")
     value = callme()
-    return HttpResponse("debugger working")
+    return render(request,"dubugger/index.html",{'value':value})
 
 def callme():
     values = []
